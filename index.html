@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <form id="contactForm" action="send_mail.php" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="contact" placeholder="Contact Number" required />
+        <input type="text" name="address" placeholder="Your Address" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="status"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
